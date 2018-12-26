@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer"/>
+    <link rel="stylesheet" href="source/plugin/jdong_topic_customize/medium/css/welfare.css">
+    <title>尾巴福利社</title>
+    <style>
+        .welfare .content .item .description .product-title {
+    height: auto;
+    margin: 14px 15px 1px;
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.welfare .content .item {
+    height: 355px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    width: 218px;
+    margin: 0 25px 30px 0;
+    border-radius: 12px;
+}
+.welfare-btn a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.welfare-btn{
+    width: 148px;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 28px;
+    background: url(http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/WuIQ3Mi3ixVxrRF.png) no-repeat center 100%/100%;
+    transition:all .2s linear;
+}
+.welfare-btn:hover{
+    background: url(http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/OrpOsOtfy294L5q.png) no-repeat center 100%/100%;
+}
+.qq{
+    display: none;
+}
+.hhh,.qq{
+    width: 947px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+.ww,.qq{
+    margin-bottom: 53px;
+}
+.welfare-title{
+    padding-bottom:53px;
+}
+.welfare .content .item .description .product-title{
+    height: 42px;
+}
+@media screen and (max-width: 960px){
+    .hhh{
+        display: none;
+    }
+    .qq{
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    display: block;
+}
+.qq.ww{
+    margin-bottom: 27px;
+}
+.qq img{
+    width: 100%;
+}
+#zjj_dgtle_mobile .mobile-css .welfare-title {
+    width: 13.6rem;
+    padding: 2rem 0 1.2rem;
+}
+}
+
+    </style>
+
+</head>
+<body>
+<div class="welfare">
+    <div class="welfare-title" style="">
+        <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/vYqGA0HJrASKKSK.png">
+    </div>
+
+
+    <!-- 广告 pc-->
+    <div class="hhh">
+<a href="&#10;https://shop197445340.taobao.com/index.htm?spm=2013.1.w5002-18682498765.12.435e76d527A0Ab" target="_blank">
+    
+    <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/jwGNDGC3JtwTdGK.png">
+</a></div>
+<div class="hhh ww">
+    <a href="https://item.jd.com/100000827465.html#crumb-wrap" target="_blank">
+        
+        <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/x3tU2i4I31pHoUK.png">
+    </a></div>
+
+
+ <!-- 广告 移动-->
+ <div class="qq">
+    <a href="&#10;https://shop197445340.taobao.com/index.htm?spm=2013.1.w5002-18682498765.12.435e76d527A0Ab" target="_blank">
+        
+        <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/jwGNDGC3JtwTdGK.png">
+    </a></div>
+    <div class="qq ww">
+        <a href="https://item.jd.com/100000827465.html#crumb-wrap" target="_blank">
+            
+            <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/x3tU2i4I31pHoUK.png">
+        </a></div>
+
+
+
+
+
+    <div class="content flex">
+        <!--列表循环-->
+        <!--{if $column[1][app]}-->
+        <!--{loop $column[1][app] $value1}-->
+        <div class="item">
+            <div class="product">
+                <img src="<!--{$value1['picurl']}-->">
+                <div class="discount">$value1['content']</div>
+            </div>
+            <div class="description">
+                <p class="product-title">$value1['title']</p>
+                <div class="price">
+                    <!-- <sub>低至</sub> -->
+                    <span>$value1['summary']</span>
+                    <sub>元起</sub>
+                </div>
+                <div class="welfare-btn">
+                    <a href="plugin.php?id=jdong_topic_customize:stat_url&app_id=<!--{$value1['id']}-->">
+                        <!-- <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/WuIQ3Mi3ixVxrRF.png"> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--{/loop}-->
+        <!--{/if}-->
+    </div>
+</div>
+</body>
+</html>
+
+<script type="text/javascript" src="../../common/static/libs/jQuery_v1.12.4.js"></script>
+<script>
+    if(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+        jQuery('.welfare').addClass('mobile-css');
+    }
+</script>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    ;(function($){
+        // 判断pc ipad 移动端
+        var deviceWidth = document.documentElement.clientWidth;
+        // var meta=document.getElementsByTagName('meta');
+        if (deviceWidth < 767) {
+            // meta[2].setAttribute('content',"width=750, maximum-scale=1,user-scalable=no");
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.2 + 'px';
+            $(".annual-card li").find(".annual-list-others").css('opacity','1')
+            $(".annual-phone-others").css('opacity','1')
+        } else if (deviceWidth > 1200) {
+            $(".annual-card li").mouseover(function (){
+                $(this).find(".annual-list-others").css('opacity','1')
+            }).mouseout(function (){
+                $(this).find(".annual-list-others").css('opacity','0')
+            });
+            $(".annual-phone").mouseover(function (){
+                $(this).find(".annual-phone-others").css('opacity','1')
+            }).mouseout(function (){
+                $(this).find(".annual-phone-others").css('opacity','0')
+            });
+        }else {
+            $(".annual-card li").find(".annual-list-others").css('opacity','1')
+            $(".annual-phone-others").css('opacity','1')
+        }
+        // 锚点跳转
+        $(".annual-tab-ul li a").click(function(){
+            var href = $(this).attr("href");
+            if (deviceWidth < 767) {
+                var pos = $(href).offset().top-52;
+            }else {
+                var pos = $(href).offset().top-150;
+            }
+
+            $("html,body").animate({scrollTop: pos}, 500);
+            return false;
+        });
+        // 导航跟随
+        $(window).on('scroll', function() {
+            if (deviceWidth < 767) {
+                var sTop = $(document).scrollTop()+62,//滚动条的滚动高度
+                    htab = $('#annualTab').offset().top ,
+                    phoneH = $('#phone').offset().top ,
+                    equipmentH = $('#equipment').offset().top ,
+                    designH = $('#design').offset().top ;
+            }else {
+                var sTop = $(document).scrollTop(),//滚动条的滚动高度
+                    htab = $('#annualTab').offset().top + 60,
+                    phoneH = $('#phone').offset().top - 150,
+                    equipmentH = $('#equipment').offset().top - 150,
+                    designH = $('#design').offset().top - 150;
+            }
+
+            if (sTop >= htab) {
+                $('.flex-tab').show()
+            } else {
+                $('.flex-tab').hide()
+            }
+            if (sTop >= phoneH && sTop <= equipmentH) {
+                $("#annualTab .annual-tab-ul li").eq(0).addClass('light').siblings('li').removeClass('light')
+                $(".annual-tab-ul li").eq(0).addClass('light').siblings('li').removeClass('light')
+            }
+            if (sTop >= equipmentH && sTop <= designH) {
+                $("#annualTab .annual-tab-ul li").eq(1).addClass('light').siblings('li').removeClass('light')
+                $(".annual-tab-ul li").eq(1).addClass('light').siblings('li').removeClass('light')
+            }
+            if (sTop >= designH) {
+                $("#annualTab .annual-tab-ul li").eq(2).addClass('light').siblings('li').removeClass('light')
+                $(".annual-tab-ul li").eq(2).addClass('light').siblings('li').removeClass('light')
+            }
+        })
+        //回到顶部
+        var scroll_top = $('#gotoTop');
+        $(window).on('scroll', function(){
+            var oTop = $(this).scrollTop();
+            var headTop = $('.annual-title').offset().top;
+            var footerTop = $('.footer-p').offset().top;
+            var winHei = $(window).height();
+            if ( oTop > 1000 && oTop < footerTop - winHei ) {
+                scroll_top.show();
+            } else {
+                scroll_top.hide();
+            }
+        })
+        scroll_top.find('.go-top').click(function(){
+            $('body,html').animate({scrollTop: 0},500);
+        })
+    })(jQuery)
+</script>

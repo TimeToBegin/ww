@@ -1,0 +1,245 @@
+body{
+    background: #6adfd1 !important;
+}
+.product-opinion-w .product-list .product-list-1 span::before{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    content: '';
+    display: block;
+    background: url('http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/tttTYRvR4cVYeMR.png') no-repeat center 100%/100%;
+    margin-right: 16px;
+}
+.product-opinion-w{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    .product-title{
+        width: 937px;
+        height: 186px;
+        margin: 95px auto 14px;
+        background:url('http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/E8ec8x7WDU6E7M1.png') no-repeat center 100%/100%;
+    }
+    h5{
+        font-family: PingFangSC-Semibold;
+        font-size: 17px;
+        color: #323232;
+        margin-bottom: 10px;
+    }
+    .product-nav{
+        width: 826px;
+        margin: 0 auto 40px;
+        
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 252px;
+                height: 180px;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                background: #000000;
+                overflow: hidden;
+                border-radius: 10px;
+                img{
+                   height: 100%;
+                   max-width: none;
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+    .product-list{
+        width: 826px;
+        margin: 0 auto 170px;
+        .product-list-content{
+     -moz-column-count: 2;
+     -webkit-column-count:2;
+     column-count: 2;
+     -moz-column-gap: 1em;
+     -webkit-column-gap: 1em;
+     column-gap: 1em;
+    
+}
+
+        .product-list-1{
+         display: inline-block;
+         position: relative;
+        //  background: #FFFFFF;
+        //  border: 2px solid #000000;
+         border-radius: 10px;
+         box-sizing: border-box;
+         width: 404px;
+         //height: 320px;
+         padding: 30px;
+        //  background: #FFFFFF;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         -webkit-column-break-inside: avoid;
+         break-inside: avoid;
+         
+         
+         p{
+                font-family: PingFangSC-Medium;
+                font-size: 15px;
+                color: #383838;
+                margin: 8px auto 26px;
+               display: -webkit-box;
+               line-height: 27px;
+               
+                        }
+            span{
+                opacity: 0.5;
+                font-family: PingFangSC-Regular;
+                font-size: 21px;
+                color: #000000;
+                display: flex;
+                align-items: center;
+            }
+                .product-list-img{
+                    width: 220px;
+                    height: 220px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    img{
+                        height: 100%;
+                        max-width: none;
+                        width: 100%;
+                        max-width: 100%;
+                        max-height: 100%;
+                        object-fit: cover;
+                    }
+                }
+        }
+    }
+}
+
+// 移动端
+@media screen and (max-width: 960px){
+    #zjj_dgtle_mobile{
+        background: #6adfd1 !important;
+    }
+    body{
+        background: #ffffff !important;
+    }
+    .product-opinion-w{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .product-opinion-w .product-title{
+        width: 100%;
+        height: 107px;
+        margin: 15px auto 15px;
+        background:url('http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/E8ec8x7WDU6E7M1.png') no-repeat center 100%/580px;
+    }
+    .product-opinion-w .product-nav {
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto 25px;
+    }
+    .product-opinion-w .product-nav ul{
+        display: -webkit-box;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling:touch;
+    }
+    .product-opinion-w .product-nav ul::-webkit-scrollbar{width:0px;display: none;}
+    .product-opinion-w .product-nav ul li{
+        width: 2300px !important;
+        height: 165px;
+        margin-right: 10px;
+    }
+    .product-opinion-w .product-nav ul li:nth-of-type(1){
+        margin-left: 20px;
+    }
+    .product-opinion-w .product-list{
+        width: 100%;
+        // max-width: 375px;
+
+      
+    }
+    .product-opinion-w h5{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .product-opinion-w .product-list .product-list-content{
+        -moz-column-count: 1;
+        -webkit-column-count:1;
+        column-count: 1;
+        -moz-column-gap: 1em;
+        -webkit-column-gap: 1em;
+        column-gap: 1em;
+    }
+    .product-opinion-w .product-list .product-list-1{
+        width: 90%;
+        padding: 25px;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        p{
+            -webkit-line-clamp:3;
+            margin: 8px auto 13px;
+        }
+    }
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1020px){
+    .product-opinion-w .product-nav ul li {
+        width: 201.5px !important;
+        margin: 0;
+       height: 144px;}
+       .product-opinion-w .product-nav ul{
+           width: 90%;
+        // justify-content: space-around;
+           margin: 0 auto;
+       }
+       .product-opinion-w .product-list .product-list-1{
+           width: 48%;
+       }
+       .product-opinion-w .product-nav ul li:nth-of-type(1){
+        margin: 0;
+       }
+       .product-opinion-w .product-list .product-list-content{
+           width: 90%;
+           margin: 0 auto;
+           justify-content: space-between;
+       }
+}
+
+.product-list-1 .affter{
+    // content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    z-index: -1;
+    transition:all 0.1s ease-out ;
+         -webkit-transition:all 0.1s ease-out ;
+         -moz-transition:all 0.1s ease-out ;
+         -ms-transition:all 0.1s ease-out ;
+         -o-transition:all 0.1s ease-out ;
+}
+.product-list-1:hover .affter{
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    }

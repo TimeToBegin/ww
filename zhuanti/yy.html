@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="./css/swiper-4.3.5.min.css">-->
+    <!--<link rel="stylesheet" href="./css/video-js.css">-->
+    <!--<link rel="stylesheet" href="./css/reset.css">-->
+    <!--<link rel="stylesheet" href="./css/index1.css">-->
+    <!--<script src="./js/jquery.min.js"></script>-->
+    <!--<script src="./js/swiper-4.3.5.min.js"></script>-->
+    <!--<script src="./js/video.min.js"></script> &ndash;&gt;-->
+
+    <!-- 线上地址 -->
+    <link rel="stylesheet" type="text/css" href="source/plugin/jdong_topic_customize/medium/css/swiper-4.3.5.min.css">
+    <link href="template/dgstyle2017/common/static/css/video-js.css" rel="stylesheet">
+    <link href="template/dgstyle2017/common/static/fonts/v3.8video/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="source/plugin/jdong_topic_customize/medium/css/index1.css">
+
+    <title>首页</title>
+
+    <style>
+        #zjj_dgtle_mobile {
+            background:rgb(106,223,209) !important;
+        }
+        .double-eleven-wap .double-eleven-video .video-arp .video-js,.vjs-poster,.video-js .vjs-tech{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div class="double-eleven-wap">
+    <!-- banner -->
+    <div class="double-eleven-banner">
+        <div class="bdsharebuttonbox" data-tag="share_1">
+            <a class="bds_tsina" data-cmd="tsina"></a>
+        </div>
+    </div>
+    <!-- 视频 -->
+    <div class="double-eleven-video clearfix">
+        <div class="double-eleven-video-title-w">
+            <div class="double-eleven-video-title"></div>
+        </div>
+        <div class="double-eleven-video-content clearfix">
+            <div class="video-arp">
+                <div class="video-content"></div>
+                <div class="video-example">
+                    <video muted id="example_video_1" class="video-js vjs-default-skin" autoplay="autoplay" controls preload="none" width="640" height="264" poster="" data-setup="{}">
+                        <source src="http://video1.dgtle.com/lhUFSApOVHyIp5JGeFJfannIyaAJ" type='video/mp4' />
+                        <source src="http://video1.dgtle.com/lhUFSApOVHyIp5JGeFJfannIyaAJ" type='video/webm' />
+                        <source src="http://video1.dgtle.com/lhUFSApOVHyIp5JGeFJfannIyaAJ" type='video/ogg' />
+                    </video>
+                </div>
+            </div>
+            <div class="video-list">
+                <!--左箭头-->
+                <div class="video-button video-button-prev video-active">
+
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                         <!--{if $column[1][app]}-->
+                         <!--{loop $column[1][app] $value1}-->
+                        <div class="swiper-slide slide-video "  data-video="$value1['picurl']">
+                            <dl class="slide-video-con">
+                                <dd>
+                                    <img src="<!--{$value1['extra_picurl']}-->" alt="">
+                                </dd>
+                                <dt>$value1['title']</dt>
+                            </dl>
+                        </div>
+                     <!--{/loop}-->
+                     <!--{/if}-->
+                    </div>
+                </div>
+                <!--右箭头-->
+                <div class="video-button video-button-next video-active">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 数字尖货 -->
+    <div class="bg-line"><div class="bg-line-1"></div></div>
+    <div class="double-eleven-sharp">
+        <div class="double-eleven-sharp-title"></div>
+        <!-- 质感单品 -->
+        <section class="double-eleven-sharp-1 ">
+            <div class="double-eleven-sharp-top">
+                <a  href="javascript:;" class="sharp-title" target="_blank" style="display:block">
+                    <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/S9vNrWWhVJbB8tj.png" alt="">
+                </a>
+                <a href="http://www.dgtle.com/zt-events-topic-490-1.html" target="_blank" class="sharp-more">
+                </a>
+            </div>
+            <ul class="double-eleven-sharp-list">
+                <!--{if $column[2][app]}-->
+                <!--{loop $column[2][app] $value2}-->
+                <li class="double-eleven-sharp-list-1">
+                    <a href="plugin.php?id=jdong_topic_customize:stat_url&app_id=<!--{$value2['id']}-->" target="_blank">
+                        <div class="sharp-list-img" style=" background: url('<!--{$value2['picurl']}-->') no-repeat center 100%/100%;">
+                        </div>
+                        <p>$value2['title']</p>
+                        <span>$value2['summary']</span>
+                    </a>
+                </li>
+               <!--{/loop}-->
+             <!--{/if}-->
+            </ul>
+        </section>
+        <!-- 超级断货 -->
+        <section class="double-eleven-sharp-1 super-sharp">
+            <div class="double-eleven-sharp-top ">
+                <div class="sharp-title">
+                    <a href="javascript:;" target="_blank">
+                        <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/M1zF1FDbKRQQCQ1.png" alt="">
+                    </a>
+                </div>
+                <a href="http://www.dgtle.com/zt-events-topic-495-1.html" class="sharp-more">
+                </a>
+            </div>
+            <ul class="double-eleven-sharp-list">
+                 <!--{if $column[3][app]}-->
+                <!--{loop $column[3][app] $value3}-->
+                <li class="double-eleven-sharp-list-1">
+                    <a href="plugin.php?id=jdong_topic_customize:stat_url&app_id=<!--{$value3['id']}-->" target="_blank">
+                        <div class="sharp-list-img" style=" background: url('<!--{$value3['picurl']}-->') no-repeat center 100%/100%;">
+                        </div>
+                        <p><!--{$value3['title']}--></p>
+                        <span><!--{$value3['summary']}--></span>
+                    </a>
+                </li>
+                <!--{/loop}-->
+               <!--{/if}-->
+             
+   
+            </ul>
+        </section>
+        <!-- 评价好物 -->
+        <section class="double-eleven-sharp-1 evaluate-sharp">
+            <div class="double-eleven-sharp-top">
+                <div class="sharp-title">
+                    <a href="javascript:;" target="_blank">
+                        <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/v7F7wzKFIFIe9If.png" alt="">
+                    </a>
+                </div>
+                <a href="http://www.dgtle.com/zt-events-topic-496-1.html" target="_blank"  class="sharp-more">
+                </a>
+            </div>
+            <ul class="double-eleven-sharp-list">
+                 <!--{if $column[4][app]}-->
+                 <!--{loop $column[4][app] $value4}-->
+                <li class="double-eleven-sharp-list-1">
+                    <a href="plugin.php?id=jdong_topic_customize:stat_url&app_id=<!--{$value4['id']}-->" target="_blank">
+                        <div class="sharp-list-img" style=" background: url('<!--{$value4['picurl']}-->') no-repeat center 100%/100%;">
+                        </div>
+                        <p><!--{$value4['title']}--></p>
+                        <span><!--{$value4['summary']}--></span>
+                    </a>
+                </li>
+               <!--{/loop}-->
+              <!--{/if}-->
+             
+           
+            </ul>
+        </section>
+        <div class="bg01"></div>
+        <div class="bg02"></div>
+    </div>
+    <!-- 产品热评 -->
+    <div class="bg-line bg-line2"><div class="bg-line-2"></div></div>
+    <div class="double-eleven-hot">
+        <div class="hot-list clearfix">
+            <!--{if $column[5][app]}-->
+           <!--{loop $column[5][app] $value5}-->
+            <a href="javascript:;" target="_blank" class="hot-list-1">
+                <div class="img" style="background:url(<!--{$value5['picurl']}-->) no-repeat center;background-size: cover;">
+                </div>
+                <div class="hot-list-msg">
+                    <p><!--{$value5['title']}--></p>
+                    <span><!--{$value5['summary']}--></span>
+                </div>
+            </a>
+         <!--{/loop}-->
+        <!--{/if}-->
+        </div>
+        <div class="hot-title">
+            <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/VCRAL028hAzDr0X.png" alt="">
+        </div>
+        <a href="http://www.dgtle.com/zt-events-topic-493-1.html" target="_blank" class="hot-more">
+            <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/L0a9awWUZOA20iz.png" alt="">
+        </a>
+    </div>
+    <!-- 尾巴福利社 -->
+    <div class="double-eleven-footer">
+        <div class="footer-img">
+            <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/m903tC3s3403l34.png" alt="">
+        </div>
+        <div class="double-eleven-footer-content">
+            <div class="content-title"></div>
+              <!--{if $column[6][app][0]}-->
+            <a href="javascript:;" target="_blank" class="content">
+                <img src="<!--{$column[6][app][0]['picurl']}-->" alt="">
+            </a>
+            <!--{/if}-->
+            <a href="http://www.dgtle.com/zt-events-topic-489-1.html" target="_blank" class="footer-more"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="template/dgstyle2017/common/static/scripts/lib/video.min.js"></script>
+<script type="text/javascript" src="source/plugin/jdong_topic_customize/medium/js/swiper-4.3.5.min.js" ></script>
+<script>
+
+    jQuery(function(){
+        //回到顶部
+        jQuery(window).scroll(function(){
+            if (jQuery(window).scrollTop()>100){ //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+                jQuery(".double-eleven-wap .bg02").fadeIn(1500);
+            }
+            else
+            {
+                jQuery(".double-eleven-wap .bg02").fadeOut(1500);
+            }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        jQuery(".double-eleven-wap .bg02").click(function(){
+            jQuery('body,html').animate({scrollTop:0},1000);
+            return false;
+        });
+
+
+        if(jQuery('.double-eleven-wap').width()<'1200'){
+            jQuery('.video-arp video').attr('src','')
+            console.log('移动')
+            jQuery('.double-eleven-video-content .slide-video').click(function(){
+                jQuery('body').css('overflow','hidden')
+                jQuery(this).addClass('videoactive').siblings().removeClass('videoactive');
+                jQuery('.video-arp video').attr('src', jQuery('.video-list .swiper-wrapper .videoactive').attr('data-video'))
+                jQuery('.video-arp').show();
+                jQuery('video')[0].load();
+
+            })
+            jQuery('.video-content').click(function(){
+                jQuery('body').css('overflow','scroll')
+                jQuery('.video-arp video').attr('src','')
+                // jQuery('video')[0].load();
+                jQuery('.video-arp').hide();
+            })
+        }else{
+            var myPlayer = videojs('example_video_1',{
+                autoplay : true
+            });
+            videojs("example_video_1").ready(function() {
+                var myPlayer = this;
+                myPlayer.play();
+                console.log(myPlayer.play())
+            });
+            console.log('pc')
+            // 微博分享
+            window._bd_share_config = {
+                common : {
+                    bdText : '双十一购物狂欢节，我向你推荐数字尾巴精选的这些产品，告诉你什么才是最值得买的品质好物#数字尾巴好物推荐#',
+                    bdDesc : '双十一购物狂欢节，我向你推荐数字尾巴精选的这些产品，告诉你什么才是最值得买的品质好物#数字尾巴好物推荐#',
+                    bdUrl : 'http://dgtle.com/zt-events-topic-487-1.html',
+                    bdPic : 'http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/OOCNIjJ87n714F7.png'
+                },
+                share : [{
+                    "bdSize" : 16
+                }],
+            }
+            with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+
+
+            var mySwiper = new Swiper('.video-list .swiper-container', {
+                autoplay: false, //可选选项，自动滑动
+                direction: 'vertical',
+                loop: true,
+                spaceBetween: 10,
+                speed: 500,
+                slideToClickedSlide: true,
+                slidesPerView: 3,
+                //   centeredSlides : true,
+                //   initialSlide :1,
+                loopedSlides : 6,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                on: {
+                    click: function() {
+                        //    	var that=this.clickedIndex+1
+                        jQuery('.video-arp video').attr('src',jQuery('.video-list .swiper-wrapper .swiper-slide-active').attr('data-video'))
+                        jQuery('video')[0].load();
+                        jQuery('video')[0].play();
+                    }
+                }
+            })
+            jQuery('.video-button-prev').click(function(){
+                mySwiper.slidePrev();
+                jQuery('.video-arp video').attr('src', jQuery('.video-list .swiper-wrapper .swiper-slide-active').attr('data-video'))
+                jQuery('video')[0].load();
+                jQuery('video')[0].play();
+            })
+            jQuery('.video-button-next').click(function(){
+                mySwiper.slideNext();
+                jQuery('.video-arp video').attr('src', jQuery('.video-list .swiper-wrapper .swiper-slide-active').attr('data-video'))
+                jQuery('video')[0].load();
+                jQuery('video')[0].play();
+            })
+
+
+            jQuery('.video-arp video').attr('src', jQuery('.video-list .swiper-wrapper .swiper-slide-active').attr('data-video'))
+            jQuery('.video-arp video')[0].onended = function() {
+                console.log('视频播放结束');
+                jQuery('.video-js .vjs-control-bar').css('opacity','1');
+                var flag=true;
+                myPlayer.on("play", function(){
+                    flag=false;
+                    console.log('播放当前')
+                });
+
+                setTimeout(function() {
+                    if(flag==true){
+                        console.log('下一个')
+                        mySwiper.slideNext();
+                        jQuery('.video-arp video').attr('src', jQuery('.video-list .swiper-wrapper .swiper-slide-active').attr('data-video'))
+                    }
+                }, 3000)
+            }
+        }
+
+
+    })
+
+</script>

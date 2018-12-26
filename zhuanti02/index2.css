@@ -1,0 +1,46 @@
+.page-warp { background: #00306a; }
+.page-warp .banner img { width: 100%; }
+.page-warp .nav-list { width: 1180px; margin: 0 auto 155px; position: relative; }
+.page-warp .nav-list .nav-list-1 { width: 280px; height: 178px; background: #ffffff; }
+.page-warp .nav-list .swiper-pagination-bullet { width: 6px; height: 6px; opacity: 0.3; background: #FFFFFF; margin: 0 5px; }
+.page-warp .nav-list .swiper-pagination-bullet-active { opacity: 1; }
+.page-warp .nav-list .swiper-pagination { position: static; margin-top: 25px; }
+.page-warp .nav-list .button-prev, .page-warp .nav-list .button-next { width: 14px; height: 25px; position: absolute; z-index: 2; background-size: cover; left: -30px; outline: none; }
+.page-warp .nav-list .button-next { right: -30px; left: auto; }
+.page-warp .page-content-warp { width: 1200px; margin: 0 auto; }
+.page-warp .page-content-warp h2 { background: #000000; height: 100px; margin-bottom: 30px; width: 100%; text-indent: -9999px; }
+.page-warp .page-content-warp h2 img { width: 100%; }
+.page-warp .page-content-warp .content-list { position: relative; margin-bottom: 26px; width: 585px; float: left; }
+.page-warp .page-content-warp .content-list img { width: 100%; }
+.page-warp .page-content-warp .content-list .msg { position: absolute; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(13%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.75))); background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 13%, rgba(0, 0, 0, 0.75) 100%); z-index: 2; bottom: 0px; padding-bottom: 41px; width: 100%; padding-left: 30px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.page-warp .page-content-warp .content-list h3 { font-family: PingFangSC-Semibold; font-size: 30px; color: #FFFFFF; letter-spacing: 0; }
+.page-warp .page-content-warp .content-list p { font-family: PingFangSC-Regular; font-size: 12px; color: #FFFFFF; margin: 8px 0 16px; width: 375px; }
+.page-warp .page-content-warp .content-list-wrap { padding-bottom: 70px; overflow: hidden; }
+.page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(1) { width: 1200px; }
+.page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(1) .msg { padding-bottom: 129px; padding-left: 80px; }
+.page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(1) p { font-family: PingFangSC-Light; font-size: 15px; color: #FFFFFF; margin: 9px 0 24px; }
+.page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(1) h3 { font-size: 35px; color: #FFFFFF; }
+.page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(2n) { margin-right: 30px; }
+.page-warp .footer-nav a { margin-right: 20px; font-family: PingFangSC-Medium; font-size: 12px; color: #FFFFFF; letter-spacing: -0.05px; }
+
+@media screen and (max-width: 960px) { .page-warp .nav-list { width: 100%; }
+  .page-warp .nav-list .nav-list-1 { width: 180px; height: 114px; }
+  .page-warp .page-content-warp { width: 100%; padding: 0 20px; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0 auto; }
+  .page-warp .nav-list .button-prev, .page-warp .nav-list .button-next { display: none; }
+  .page-warp .nav-list { margin-bottom: 35px; }
+  .page-warp .page-content-warp .content-list-wrap .content-list { width: 100%; min-height: 256px; }
+  .page-warp .page-content-warp .content-list-wrap .content-list h3 { font-size: 20px; }
+  .page-warp .page-content-warp .content-list-wrap .content-list p { font-size: 12px; margin: 9px 0 12px; width: 83%; }
+  .page-warp .page-content-warp .content-list-wrap .content-list .msg { padding: 0 0 22px 25px; width: 100%; }
+  .page-warp .page-content-warp .content-list-wrap .content-list a { margin-right: 20px; }
+  .page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(1) { width: 100%; }
+  .page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(1) h3 { font-size: 26px; }
+  .page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(1) p { font-size: 12px; margin: 9px 0 12px; width: 83%; }
+  .page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(1) .msg { padding: 0; width: 100%; top: 40px; padding-left: 25px; }
+  .page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(1) .msg h3 { font-size: 26px; } }
+@media (min-device-width: 1024px) and (max-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) { .page-warp .page-content-warp .content-list { width: 476px; }
+  .page-warp .page-content-warp .content-list-wrap { width: 96%; margin: 0 auto; }
+  .page-warp .page-content-warp .content-list-wrap .content-list:nth-of-type(1) { width: 100%; }
+  .page-warp .page-content-warp { width: 100%; }
+  .page-warp .nav-list { width: 100%; }
+  .page-warp .nav-list .button-prev, .page-warp .nav-list .button-next { display: none; } }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/swiper-4.3.5.min.css">
+		<link rel="stylesheet" href="./css/video-js.css">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/index.css">
+		<script src="./js/jquery.min.js"></script>
+	    <script src="./js/swiper-4.3.5.min.js"></script>
+	    <script src="./js/video.min.js"></script>
+		<style type="text/css">
+			.swiper-container {
+				width: 300px;
+				height: 300px;
+				float: left;
+			}
+			
+			.home-banner {
+				width: 500px;
+				height: 300px;
+				background: #000000;
+				float: left;
+			}
+			
+			.swiper-slide-active {
+				border: 1px solid #000000;
+			}
+			
+			.video-js .vjs-control-bar {
+				/*opacity: 1 !important;*/
+			}
+			button:focus{
+         		 outline: none;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+    <source src="http://video1.dgtle.com/lhUFSApOVHyIp5JGeFJfannIyaAJ" type='video/mp4' />
+    <source src="http://video1.dgtle.com/lhUFSApOVHyIp5JGeFJfannIyaAJ" type='video/webm' />
+    <source src="http://video1.dgtle.com/lhUFSApOVHyIp5JGeFJfannIyaAJ" type='video/ogg' />
+    <!-- <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>Tracks need an ending tag thanks to IE9 -->
+    <!-- <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>Tracks need an ending tag thanks to IE9 -->
+</video>
+	</body>
+
+</html>
+<script type="text/javascript">
+    var myPlayer = videojs('example_video_1');
+    videojs("example_video_1").ready(function(){
+        var myPlayer = this;
+        myPlayer.play();
+    });
+</script>

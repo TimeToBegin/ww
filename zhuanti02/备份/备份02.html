@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src=”http://html5shiv.googlecode.com/svn/trunk/html5.js”></script> -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>尾巴年度评选首页</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="source/plugin/jdong_topic_customize/medium/css/swiper-4.3.5.min.css">
+    <link rel="stylesheet" href="source/plugin/jdong_topic_customize/medium/css/indexrr.css">
+    
+</head>
+<style>
+.footer{
+    margin-top: 0px;
+}
+.share-msg{
+    font-family: PingFangSC-Regular;
+font-size: 15px;
+color: #797979;
+}
+</style>
+<body>
+   <div class="index-Selection-wrap">
+       <div class="banner banner-height">
+           <div class="box"> <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/oKO07BOJHQU7vGP.png" alt=""></div>
+       </div>
+       <div class="banner2 banner-height">
+           <div class="vote-bottom">直
+                达
+                投
+                票</div>
+            <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/er1f0z0J7W9a77f.png" alt="">
+        </div>
+       <div class="selection-content">
+            <div class="indexnav_wrap">
+                <div class="indexnav-1-1">
+                        <div class="indexnav swiper-container">
+                                <ul class="index_nav swiper-wrapper">
+                                    <!--{loop $column $key1 $value1}-->
+                                    <li class="swiper-slide"><a  href="javascript:void(0)" title="<!--{$key1}-->"><i></i><span><!--{$value1['name']}--></span></a>
+                                    </li>
+                                    <!--{/loop}-->                 
+                                   </ul>
+                              </div>
+                              <div class="logo">
+                                <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/sZmmA8Vqi6fIeMZ.png" alt="">
+                            </div>
+                </div>
+              
+            </div>
+            <!--{loop $column $key2 $value2}-->
+            <div class="row">
+               <ul class="row-contetn" id="index_<!--{$key2}-->">
+                   <!--{loop $value2['app'] $key3 $value3}-->
+                   <!--{if $key3==0}-->
+                   <li class="">
+                       <div class="bg">
+                           <img src="<!--{$value3['picurl']}-->" alt="">
+                       </div>
+                       <div class="msg">
+                           <h3><!--{$value3['title']}--></h3>
+                           <p><!--{$value3['summary']}--></p>
+                       </div>
+                       <div class="bg2">
+                          
+                       </div>
+                        <div class="bg2-msg">
+                              <!--{if !empty($value3['url'])}-->
+                              <a href="<!--{$value3['url']}-->" target="_blank"><!--{$value3['content']}-->></a>
+                               <!--{/if}-->
+                               <!--{if !empty($value3['extra_picurl'])}-->
+                                <a href="<!--{$value3['extra_picurl']}-->" target="_blank"><!--{$value3['extra_content']}--></a>
+                               <!--{/if}-->
+                        </div>
+                       <div class="bg3">
+                           <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/vSVxavk3Kue3aSl.png" alt="">
+                       </div>
+                   </li>
+                   <!--{else}-->
+                   <li class="row-contetn-1" id="<!--{$value3['id']}-->">
+                    <div class="bg">
+                        <img src="<!--{$value3['picurl']}-->" alt="">
+                    </div>
+                    <div class="msg">
+                        <h3><!--{$value3['title']}--></h3>
+                        <p><!--{$value3['summary']}--></p>
+                    </div>
+                    <div class="bg3">
+                        <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/WTJYvAiTcD1wnv2.png" alt="">
+                    </div>
+                      <div class="bg2">
+                    </div>
+                     <div class="bg2-msg">
+                               <!--{if !empty($value3['url'])}-->
+                              <a href="<!--{$value3['url']}-->" target="_blank"><!--{$value3['content']}-->></a>
+                               <!--{/if}-->
+                               <!--{if !empty($value3['extra_picurl'])}-->
+                                <a href="<!--{$value3['extra_picurl']}-->" target="_blank"><!--{$value3['extra_content']}--></a>
+                               <!--{/if}-->
+                     </div>
+                </li>
+               <!--{/if}-->
+                <!--{/loop}-->
+               </ul>
+            </div>
+            <!--{/loop}-->           
+            </div>
+            <div class="footer-wrap">
+                <div class="footet">
+                    <p>已喜欢 <span class="footet-num">1</span> 个产品</p>
+                    <ul class="footet-list">
+                      
+                    </ul>
+                    <div class="sub1 sub-date">
+                        <span class="sub1-ii">提交我喜欢的并分享</span>
+                        <div class="icon"></div>
+                            <!-- 分享弹窗 -->
+                            <div class="sub-pop-up">
+                                <span class="close">X</span>
+                                <div class="sub-pop-1">
+                                   <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/Bx1u1nUhPWzWPHX.png" alt="">
+                                    <p>你的评选已提交成功</p>
+                                    <span class="share-msg" style="font-family: PingFangSC-Regular;
+                                    font-size: 15px;
+                                    color: #797979;">分享到微博参与抽奖</span>
+                                </div>
+                                <div class="sub-pop-2">
+                                   <div class="img">
+                                        <img id="share_photo"  data-tag="sharePhoto"  src="" alt="" srcset="">
+                                   </div>
+                                    <div class="sub-pop-2-list bdsharebuttonbox" data-tag="share_1">
+                                        <a id="mobile_wx_share" href="" class="moble"></a>
+                                        <a href="#"  class="moble1 bds_weixin" data-cmd="weixin"></a>
+                                        <a  href="#" class="moble1 bds_tsina" data-cmd="tsina"></a>
+                                        <a class="moble1" id="share_down" target="_blank"  href="" download="KTgWncTW1UO1N44.png">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- 正在提交 -->
+                    <div class="sub2" style="display:none">
+                       <span>正在提交…</span>
+                    </div>
+                    <!-- 已经提交 -->
+    
+                    <div class="sub3" style="display:none">
+                        <span>已提交</span>
+                    </div>            
+                </div>
+            </div>
+   </div>
+		</body>
+		
+</html>
+<script>
+//    // 通过缩放属性适应各个宽度的平板
+//    var s=document.body.clientWidth;
+//         var scale = s/1250;
+//         var meta=document.getElementsByTagName('meta');
+//         if(s < 1250 && s > 700){
+//             meta[1].setAttribute('content',"width=device-width, initial-scale=" + scale + ", minimum-scale=" + scale + ", maximum-scale=2.0");
+//         }
+    
+</script>
+<script src="./jQuery_v1.12.4.js"></script>
+<script type="text/javascript" src="source/plugin/jdong_topic_customize/medium/js/swiper-4.3.5.min.js" ></script>
+<script type="text/javascript">
+var ua = navigator.userAgent;
+var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+
+isIphone =ua.match(/(iPhone\sOS)\s([\d_]+)/),
+
+isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+
+isMobile = isIphone || isAndroid ||ipad;
+// 鼠标划过
+if(!isMobile){
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: false,//可选选项，自动滑动
+        slidesPerView : 'auto',
+        spaceBetween : 10,
+        slidesOffsetAfter : 120,
+        centerInsufficientSlides: true,
+    })
+    
+    jQuery('.row-contetn-1').hover(function(){
+            if(jQuery(this).hasClass('like')){
+                console.log(jQuery(this).find('.bg2'))
+               jQuery(this).find('.bg2').css({
+                    "background":"url(http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/Y1dB2z2nDV2bVR2.png)",
+                    "background-position":"center",
+                    "background-repeat":" no-repeat",
+                    "background-size":"100%",
+                    }).addClass('active-bg2')
+            }else{
+                jQuery(this).find('.bg2').css({
+                    "background":"url(http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/f323C2hk3KgHvqO.png)",
+                    "background-position":"center",
+                    "background-repeat":" no-repeat",
+                    "background-size":"100%",
+                    }).removeClass('active-bg2')
+            }
+        },function(){
+            if(jQuery(this).hasClass('like')){
+             
+            }else{
+            }
+        })
+}else{
+    jQuery('body').addClass('moble')
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: false,//可选选项，自动滑动
+        slidesPerView : 'auto',
+        spaceBetween : 10,
+        slidesOffsetAfter : 120,
+        centerInsufficientSlides: true,
+    })
+}
+
+
+
+   jQuery('.selection-content ').on('click','.row-contetn-1 .bg2',function(){  //点赞喜欢
+     
+        var length=jQuery('.footet-list li').length;
+        var num =length;
+       
+        jQuery('.footet').addClass('active');
+        var img=jQuery(this).siblings('.bg').find('img').attr('src');
+        if(!jQuery(this).parent('.row-contetn-1').hasClass('like')){
+             if(num>=10){
+                  alert('最多可以选择10个产品');
+                  return;
+            }
+            num++;
+            jQuery(this).addClass('active2-bg2')
+            jQuery(this).parent('.row-contetn-1').toggleClass('like')
+            var id = jQuery(this).parent('.row-contetn-1').attr("id");
+            
+            var html = '<li id="'+id+'" style="background-image:url('+img+');"></li>';
+            jQuery('.footet-list').append(html)
+        }else{
+            num--;
+        //   var length=jQuery('.footet-list li').length;
+            if(length==1){
+            jQuery('.footet').removeClass('active');
+          }
+            jQuery(this).removeClass('active2-bg2')
+            jQuery(this).parent('.row-contetn-1').removeClass('like')
+            jQuery('.footet-list').find('#'+jQuery(this).parent('.row-contetn-1').attr('id')).remove();
+        }
+        jQuery('.footet-num').html(num)
+       
+    })
+
+
+      // 微博分享
+      window._bd_share_config = {
+                    common : {
+                        bdText : '啦啦啦啦啦啦',	
+                        bdDesc : '哈哈哈哈哈',	
+                        // bdUrl : 'http://WWW.DGTLE.COM/dgfesta2018.html', 	
+                        // bdPic : jQuery("#share_photo").attr("src"),
+                        onBeforeClick:function(weixin,config){
+                            config.bdUrl= jQuery("#share_photo").attr("photo_url");
+                            config.bdText='啦啦啦啦啦啦'
+                            config.bdDesc="哈哈哈哈哈"
+                            config.bdPic= jQuery("#share_photo").attr("src");
+                            return config
+                        },
+                        onAfterClick:function(tsina,config){
+                            config.bdUrl= 'http://WWW.DGTLE.COM/dgfesta2018.html';
+                            config.bdText='啦啦啦啦啦啦'
+                            config.bdDesc="哈哈哈哈哈"
+                            config.bdPic= jQuery("#share_photo").attr("src");
+                            return config
+                        }
+                    },
+                    share : [{
+                        "bdSize" : 16
+                    }]
+                }
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+    
+
+    jQuery('.sub-date').click(function(){
+        jQuery(this).addClass('active')
+        jQuery('.indexnav_wrap').removeClass('active-nav');
+        jQuery(window).unbind('scroll')
+       
+        var objs = jQuery(".footet-list").find("li");
+        
+        var ids = new Array();
+        jQuery.each(objs,function(i,n){
+             var id = jQuery(n).attr("id");
+             ids.push(id);
+        });
+        if(!ids){
+             alert("请选择投票的商品");
+        }else{
+             ids = ids.join(",");
+             var  obj = jQuery('.sub-pop-up');
+             var url = "/plugin.php?id=jdong_topic_customize:vote_img";
+	     jQuery.ajax({
+		url:url,
+                data:{app_ids:ids},
+		async:true,
+                dataType:'json',
+		beforeSend:function(){
+		      jQuery('.sub1').addClass('sub2').removeClass('sub-date').find('.sub1-ii').html('正在提交…');
+		},
+		complete:function(){
+		      jQuery('.sub1').addClass('sub3').find('.sub1-ii').html('已提交');	
+		},
+		success:function(data){
+                    
+			if(data.success==1){
+                               var img = data.data.img;
+                               var share_img_url = data.data.share_img_url
+                               jQuery("#share_photo").attr('src',img);
+                               jQuery("#share_photo").attr('photo_url',share_img_url);
+                               jQuery("#mobile_wx_share").attr('href',share_img_url);
+                               jQuery("#share_down").attr('href',img);
+			       obj.fadeIn();	
+			}else if(data.success==0){
+                                
+				alert(data.info);
+			}
+	       }}); 		
+            
+        }
+
+    })
+    
+    
+    
+    jQuery('.close').click(function(e){
+        stopBubble(e);
+        jQuery('.sub1').removeClass('active')
+        _scroll();
+        jQuery('.sub-pop-up').fadeOut();
+    })
+    function stopBubble(e) { 
+    //如果提供了事件对象，则这是一个非IE浏览器 
+    if ( e && e.stopPropagation ) 
+        //因此它支持W3C的stopPropagation()方法 
+        e.stopPropagation(); 
+    else 
+        //否则，我们需要使用IE的方式来取消事件冒泡 
+        window.event.cancelBubble = true; 
+    }
+    jQuery(document).ready(function($) {
+	 jQuery(".index_nav li a").click(function(event) {
+        jQuery(".index_nav li a").removeClass('active') 
+         jQuery(this).addClass('active');
+        //  jQuery(window).unbind('scroll')
+		var index=this.title
+		var id='#'+'index_'+index
+        if(!isMobile){
+            jQuery("html,body").animate({scrollTop: jQuery(id).offset().top-180}, 1000);
+        }else{
+            jQuery("html,body").animate({scrollTop: jQuery(id).offset().top-80}, 1000);
+        }
+       
+        // console.log(jQuery(id).offset().top-80)
+	 });
+	});
+    _scroll();
+
+            if(!isMobile){
+            var topheight=jQuery('.banner-height').height();
+            }else{
+            var topheight=jQuery('#index_1').offset().top+63;
+            }
+            // 直达投票
+            jQuery('.vote-bottom').click(function(){
+                jQuery("html,body").animate({scrollTop:topheight-200}, 1000);
+            })
+        var toparr=[];
+        for(var i=1;i<jQuery('.row').length+1;i++){
+            if(!isMobile){
+                toparr.push(jQuery('#index_'+i).offset().top+180)
+            }else{
+                toparr.push(jQuery('#index_'+i).offset().top-180)
+            }
+           
+        }
+       
+   
+        function _scroll(){
+        jQuery(window).scroll(function(){//开始监听滚动条
+                //获取当前滚动条高度
+		var top = jQuery(document).scrollTop();
+		if(top >=topheight-180){
+        jQuery('.indexnav_wrap').addClass('active-nav')
+		}else{
+            jQuery('.indexnav_wrap').removeClass('active-nav')
+        }
+                     for(i = 0;i <= toparr.length; i++){
+                        if(top >= toparr[i]-417){//判断大小
+                            jQuery('.index_nav li').eq(i).find('a').addClass('active')
+                            jQuery('.index_nav li').eq(i).siblings().find('a').removeClass('active')
+                            mySwiper.slideTo(i, 1000, false);//切换到第一个slide，速度为1秒
+                        }
+                    }
+                    
+                    
+
+     	})
+        }
+  </script>
+  
+  

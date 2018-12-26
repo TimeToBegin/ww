@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    html,body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none; 
+  user-select: none;
+  overflow: hidden;
+}
+
+.videobox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background: #000000;
+}
+
+video {width:100%;display: block;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+</style>
+<body>
+        <div class="videobox">
+                <!-- <video id="mainvideo" webkit-playsinline="true" src="http://video1.dgtle.com/20181102_1.mp4"></video> -->
+                <video muted id="example_video_1" class="video-js vjs-default-skin" autoplay="autoplay"  controls preload="none" width="640" height="264" poster="" data-setup="{}">
+                        <source src="http://video1.dgtle.com/lhUFSApOVHyIp5JGeFJfannIyaAJ" type='video/mp4' />
+                        <source src="http://video1.dgtle.com/lhUFSApOVHyIp5JGeFJfannIyaAJ" type='video/webm' />
+                        <source src="http://video1.dgtle.com/lhUFSApOVHyIp5JGeFJfannIyaAJ" type='video/ogg' />
+                    </video>
+            </div>
+</body>
+</html>
+<script>
+  var video = document.querySelector('#mainvideo');
+  var videobox = document.querySelector('.videobox');
+
+  //播放时改变外层包裹的宽度，使video宽度增加，
+  //相应高度也增加了,播放器控件被挤下去，配合overflow：hidden
+  //控件看不见也触摸不到了
+  var setVideoStyle = function (){
+    videobox.style.width = '120%';
+    videobox.style.left = '-10%';
+    video.style.width = '100%';
+  }
+</script>

@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link type="text/css" rel="stylesheet" href="http://www.dgtle.com/data/cache/style_13_common.css" />-->
+		<!--<link type="text/css" rel="stylesheet" href="css/huawei.css" />-->
+		<style>
+			
+		a,a:hover,a:focus{color:inherit;}
+		.footer{margin-top:0;}
+		.clearfix:after{ display: block; clear: both; content: ""; width:0;height: 0; }
+		iframe{border: none;}
+		p{
+			margin: 0;
+		}
+		.inner_img{
+			width: 100%;height: 100%;object-fit: cover;
+			  border-radius: 6px;
+		}
+		.HUAWEI_wrap{
+			width: 100%;min-height: 100%;background:#fafafa;
+		}
+		.HUAWEI_banner{
+			width:100%;
+		}
+		.HUAWEI_banner_img{
+			 min-width:1920px;
+			 min-height: 816px;
+			 max-width:1920px;
+			 max-height: 816px;
+			 width:1920px;
+			 height: 816px;			 
+			 background-image: url(http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/tiAOGLAZKjEI9L4.png);
+			 background-size: 100% 100%;
+			 margin: 0 auto;
+		}
+	
+		.HUAWEI_banner_exp{
+			    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: linear-gradient(rgba(253, 252, 251, 1),rgba(253, 252, 251, 1));
+    
+    margin-top: -98px;
+    padding: 70px 147px;
+    box-sizing: border-box;
+    border-radius: 6px;
+		}
+		.HUAWEI_banner_bottomMap>p{
+			text-indent: 24px;
+		}
+		.HUAWEI_banner_exp p{
+			opacity: 0.3;
+			font-family: PingFangSC-Medium;
+			font-size: 12px;
+			color: #434343;
+			letter-spacing: 0;
+			line-height: 29px;
+			margin: 0;
+		}
+		
+		.HUAWEI_banner_topMap{
+			width:165px;height: 83px;position: absolute;
+			    right: 147px;
+			     background: url(http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/gNUZ3LARTULRLLM.png);
+			     background-size: cover;
+    top: 59px;
+		}
+	  .HUAWEI_bigMap{
+	  	   width: 1200px;height: 560px;border-radius: 6px;margin: 0 auto;margin-top:50px;
+	  	  position: relative;
+	  	   overflow: hidden;
+	  }
+	  .HUAWEI_bigMap>div{
+	  	display: none;
+	  	width: 100%;
+	  	height: 100%;
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	    margin: 25px;
+	  	background: url(http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/pFfhT1PNkGoduhh.png);
+	  	z-index: 2;
+	  }
+	  .HUAWEI_bigMap:hover img{
+	  	   -webkit-transform: scale(1.02);
+  -moz-transform:scale(1.02)
+  transform: scale(1.02);
+	 
+	  }
+	  .HUAWEI_bigMap img{
+	  	 -webkit-transition: all .3s cubic-bezier(0.31, 0.23, 1, 1);
+      -moz-transition: all .3s cubic-bezier(0.31, 0.23, 1, 1);
+      -ms-transition: all .3s cubic-bezier(0.31, 0.23, 1, 1);
+      -o-transition: all .3s cubic-bezier(0.31, 0.23, 1, 1);
+      transition: all .3s cubic-bezier(0.31, 0.23, 1, 1);
+	  	width: 100%;
+	  	height: 100%;
+	  	border-radius: 6px;
+	  }
+	  .HUAWEI_show,.HUAWEI_hiden{
+	  	color: #939393 ;
+	  	font-size: 12px;
+	  }
+	  .HUAWEI_bigMap_img{
+	  	  width: calc(100% - 50px);
+	  	  height:calc(100% - 50px);
+	  	  margin-left: 25px;margin-top:25px;
+	  }
+	  .HUAWEI_smallMap_wrap{
+	  	   text-align: center;margin-top: 50px;
+	  }
+	  .HUAWEI_smallMap{
+	  	position: relative;
+	  	  width: 475px;height: 302px;overflow: hidden;border-radius: 4px;display:inline-block;
+	  }
+	   .HUAWEI_smallMap img{
+	-webkit-transition: all .3s cubic-bezier(0.31, 0.23, 1, 1);
+      -moz-transition: all .3s cubic-bezier(0.31, 0.23, 1, 1);
+      -ms-transition: all .3s cubic-bezier(0.31, 0.23, 1, 1);
+      -o-transition: all .3s cubic-bezier(0.31, 0.23, 1, 1);
+      transition: all .3s cubic-bezier(0.31, 0.23, 1, 1);
+	   }
+	  .HUAWEI_smallMap:hover img{
+	   -webkit-transform: scale(1.02);
+  -moz-transform:scale(1.02)
+  transform: scale(1.02);
+	  	 
+	  }
+	  .HUAWEI_smallMap_content{
+	  	position: absolute;
+	  	z-index:2;
+        bottom: 0;
+        width: 100%;
+        padding: 20px 30px 20px 20px;
+        box-sizing: border-box;
+          background: -webkit-linear-linear-gradient(#09090903, #0909099e);; /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#09090903, #0909099e);; /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#09090903, #0909099e);; /* Firefox 3.6 - 15 */
+  background: linear-gradient(#09090903, #0909099e);; /* 标准的语法 */
+	  }
+	  .HUAWEI_smallMap_content p{
+	  	color: #FFFFFF;
+        text-align: left;
+        margin-bottom: 5px;
+	  	font-size: 20px;
+	  	font-weight: bold;
+	  	width: 227px;
+	  }
+	  .HUAWEI_smallMap_content span:nth-of-type(1){
+	  	color: #AEAEAE;
+	  	font-size: 12px;
+	  	float: left;
+	  }
+	  .HUAWEI_smallMap_content span:nth-of-type(2){
+	  	color: #FFFFFF;
+	  	font-size: 25px;
+	  	font-weight: bold;
+	  	float: right;
+	  	    position: absolute;
+    bottom: 20px;
+    right: 30px;
+	  }
+	  .HUAWEI_smallMap_first{
+	  	  margin-right: 10px;
+	  }
+	  .update_article{
+	  	  width:960px;margin: 0 auto;
+	  	  margin-top: 55px;
+	  }
+	  .update_article_title{
+	  	  width: 384px;height: 46px;margin: 0 auto;
+	  }
+	  .update_article_describe{
+	  	  text-align: center;margin-top: 10px;
+	  }
+	  .update_article_total{
+	  	  font-family: PingFangSC-Regular;
+			font-size: 15px;
+			color: #AEAEAE;
+			letter-spacing: 0;
+	  }
+	  .describe_pot{
+	  	  line-height: 20px;
+	  }
+	  .update_article_content{
+	  	   width: 960px;
+	  	   background: beige;
+	  	   margin: 0 auto;
+	  }
+	  
+	  .free_exp_title{
+	  	  width:355px;height:75px;margin:0 auto;
+	  }
+	  .free_exp_content{
+	  	  width:960px;height:245px;margin: 0 auto;
+	  	  border-radius: 6px;margin-top: 30px;
+	  	  position: relative;
+	  }
+	  .free_exp_cover_img{
+	  	  width: 178px;height:178px;position:absolute;right:-30px;bottom:-30px;
+	  }
+	  .HUAWEI_talent_item_box{
+	  	   width:180px;height:232px;border-radius: 6px;overflow: hidden;position: relative;float: left;
+	  	   margin-right:15px;margin-bottom: 30px;
+	  }
+	  .HUAWEI_talent_item_box:nth-child(5n+5){
+	  	   margin-right: 0;
+	  	 
+	  }
+	  .HUAWEI_talent_item{
+	  	  width:100%;height:100%;position: relative;border-radius:6px;overflow: hidden;
+	  }
+	  .HUAWEI_talent{
+	  	  width:960px;margin: 0 auto;margin-top: 40px;
+	  }
+	  .HUAWEI_talent_item_tyep{
+	  	  font-family: PingFangSC-Medium;
+			font-size: 12px;
+			color: #FFFFFF;
+			letter-spacing: 0;
+			position: absolute;
+			left:15px;
+			bottom: 45px;
+			z-index: 10;
+	  }
+	  .HUAWEI_talent_item_name{
+	  	  position: absolute;left: 15px;bottom: 15px;z-index: 10;
+	  	  font-family: PingFangSC-Semibold;
+			font-size: 26px;
+			color: #FFFFFF;
+			letter-spacing: 0;
+			line-height: 26px;
+	  }
+	  .HUAWEI_hoverShow{
+	  	  width:calc(100% - 40px);height:calc(100% - 60px);
+	  	  position: absolute;
+	  	  height: 100%;
+	  	  width: 100%;
+	  	   box-sizing: border-box;
+	  	  left: 0;top:0;
+	  	  background: #F0F0F0;
+	  	  z-index:20;
+	  	  opacity:0;
+	  	  padding:30px 20px;
+	  	  -webkit-transition: all .6s linear;
+      -moz-transition: all .6s linear;
+      -ms-transition: all .6s linear;
+      -o-transition: all .6s linear;
+      transition: all .6s linear;
+	  }
+	  .HUAWEI_hoverShow_word{
+	  	  font-family: PingFangSC-Regular;
+			font-size: 15px;
+			color: #434343;
+			letter-spacing: 0;
+			text-align: justify;
+			line-height: 25px;
+	  }
+	  .HUAWEI_hoverShow:hover{
+	  	  width:calc(100% - 40px);height:calc(100% - 60px);
+	  	  position: absolute;
+	  	  left: 0;top:0;
+	  	  background: #F0F0F0;
+	  	  z-index:20;
+	  	  opacity: 0.9;
+	  	  padding:30px 20px;
+	  	  width: 100%;
+	  	  height: 100%;
+	  	  box-sizing: border-box;
+	  	  
+	  }
+	  .HUAWEI_talent_item_box:hover .HUAWEI_talent_warp{
+	  	display: none;
+
+	  }
+	  .clickBuy{
+	  	  width:754px;height:165px;margin: 0 auto;margin-top:40px;
+	  }
+	  .openFreeLife{
+	  	  width:441px;height:48px;margin: 0 auto;
+	  	  margin-top: 127px;
+	  	  padding-bottom: 185px;
+	  }
+	  .article_waterfall{
+	  	    -moz-column-count:4; /* Firefox */
+        -webkit-column-count:4; /* Safari 和 Chrome */
+        column-count:4;
+        -moz-column-gap:2px;
+        -webkit-column-gap:2px;
+        column-gap:2px;
+	  }
+	  .flowBox{
+	  	  
+	  }
+	   .HUAWEI_banner_bottomMap{
+    	width: 681px;
+    	margin-bottom: 20px;
+    height: 147px;
+     transition: all 0.8s ease 0s;
+    overflow: hidden;
+    }
+    .HUAWEI_show,.HUAWEI_hiden{
+    	position: relative;
+    }
+    .HUAWEI_show:after{
+         width: 13px;
+   		height: 6px;
+        background: url(http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/id5DLaCOKYWL8cW.png);
+        position: absolute;
+        content: "";
+        background-size: 100%;
+        margin-top: 9px;
+   		margin-left: 5px;
+    }
+    .HUAWEI_hiden:after,.HUAWEI_hiden:before{
+    	width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-bottom-color: #939393;
+        position: absolute;
+        content: "";
+        margin-top: -2px;
+       margin-left: 5px;
+    }
+   .HUAWEI_show:before{
+   top: -3px;
+    left: 48px;
+   border-top-color: white;
+   z-index: 2;
+   } 
+   .HUAWEI_hiden:before{
+   	top: 2px;
+    left: 24px;
+   border-bottom-color: white;
+   z-index: 2;
+   }
+   .HUAWEI_hiden{
+   	display: none;
+   }
+	  .flowBox img{
+	  	  width: 227px;display: block;margin: 0 auto;
+	  }
+	  
+	  /*流布局*/
+	 .container{width:100%;margin: 0 auto; margin-top: 33px;}
+    /*瀑布流层*/
+    .waterfall{
+        -moz-column-count:4; /* Firefox */
+        -webkit-column-count:4; /* Safari 和 Chrome */
+        column-count:4;
+        -moz-column-gap: 1em;
+      -webkit-column-gap: 1em;
+      column-gap: 1em;
+    }
+    /*一个内容层*/
+   .container .item h5{
+    	font-size: 20px;
+    	color: #9A9A9A;
+    	margin-bottom: 8px;
+    	margin-left: 8px;
+    	font-weight: 400;
+    	
+    }
+    .container .item p{
+    	font-size: 20px;
+    	line-height: 28px;
+    	color: #434343 ;
+    	margin-bottom: 8px;
+    	width: 200px;
+    margin-left: 8px;
+    font-weight: bold;
+    }
+    .container .item span{
+    	font-size: 12px;
+    	color: #9A9A9A;
+   margin-left: 8px;
+    	
+    }
+    .container .item {
+    -webkit-transition: all 1s ease 0s;
+    	
+    }
+
+    
+    .container .item:hover{
+    	background: #FFFFFF;
+
+    box-shadow: 0 15px 15px 0 rgba(15, 37, 64, 0.10);
+    border-radius: 6px;
+    z-index: 2;
+    }
+    .item_active{
+    	-webkit-transition: all 0.8s ease 0s;
+    	 	background: rgba(1,1,1,0);
+    }
+    .free_exp{
+    	margin-top: 42px;
+    }
+    .update_article{
+    	width: 1037px;
+    }
+    .item{
+    	width: 243px;
+    	box-sizing: border-box;
+    margin-bottom: 20px;
+      padding: 10px;     
+      -moz-page-break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      break-inside: avoid;
+       border-radius: 6px;
+       position: relative;
+     
+    }
+    .item-active{
+    	     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    
+    }
+    .container .item:hover .item-active{
+    	opacity: .1;
+    }
+    .item img{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom:20px;
+        border-radius: 6px;
+    }
+    .free_exp_cover_img .inner_img{
+    	border-radius: 50%;
+    }
+	.HUAWEI_talent_warp{
+			position: absolute;
+		    height: 113px;
+		    right: 0;
+		    bottom: 0;
+		    width: 100%;
+	  	    transition: all 1s linear;
+		    
+	  	  background: -webkit-linear-gradient(#09090903, #1c1a1a63); /* Safari 5.1 - 6.0 */
+		  background: -o-linear-gradient(#09090903, #1c1a1a63); /* Opera 11.1 - 12.0 */
+		  background: -moz-linear-gradient(#09090903, #1c1a1a63);/* Firefox 3.6 - 15 */
+		  background: linear-gradient(#09090903, #1c1a1a63); /* 标准的语法 */
+	  }
+	  
+		@media screen and (max-width:960px){
+			.update_article{
+				width: 338px;
+			}
+			  .HUAWEI_smallMap_first{
+	  	  margin-right: 4px;
+	  }
+			.HUAWEI_banner_img{
+              min-height: 277px;
+              min-width: 375px;
+               max-height: 277px;
+              max-width: 375px;
+              height: 277px;
+              width: 375px;
+              margin: 0 auto;
+			 background-image: url(http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/LrF4R4RHheMRFo3.png);
+
+		}
+			.HUAWEI_banner_bottomMap{
+				width: 304px;
+				height: 218px;
+				transition: all 0.8s ease 0s;
+			}
+
+			.HUAWEI_banner_exp {
+    position: relative;
+    width: 335px;
+    margin: 0 auto;
+    font-size: 12px;
+    padding: 16px;
+}
+.HUAWEI_bigMap {
+   width: 335px;
+    height: 156px;
+     	border-radius: 6px;
+    }
+    .HUAWEI_bigMap img{
+    	border-radius: 6px;
+    	width: 100%;
+    	height: 100%;
+    }
+    .HUAWEI_smallMap {
+    width: 163px;
+    height: 125px;}
+    .free_exp_content {
+    width: 335px;
+    height: 172px;}
+   .free_exp_cover_img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -13px;
+    bottom: -14px;}
+    .free_exp_title {
+    width: 210px;
+    height: 44px;
+    margin: 0 auto;
+}
+.HUAWEI_talent {
+    width: 335px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;}
+    .HUAWEI_talent_item_box{
+	 	width: 163px;
+	 	margin: 0;
+	 	margin-bottom: 15px;
+	 }
+	 .openFreeLife{
+	 	width: 227px;
+	 	
+	 }
+	 .item{
+	 	padding: 0px;
+	 }
+	 .container .item:hover{
+	 	background: rgba(1,1,1,0);
+    box-shadow: 0 0px 0px 0 rgba(15, 37, 64, 0);
+    border-radius: 6px;
+
+	 }
+	 .item-active{
+	 	display: none;
+	 }
+	 .item img{
+	 	margin-bottom: 15px;
+	 }
+	 .container .item h5{
+	 	line-height: 20px;
+	 	margin-left: 0;
+	 }
+	 .containern.item p{
+	 	line-height: 21px;
+	 	margin-left: 0;
+	 }
+	 .openFreeLife img{
+	 	height: 25px;
+	 	width: 227px;
+	 	
+	 }
+	 .clickBuy{
+	 	width: 335px;
+	 	height: auto;
+	 }
+	 .HUAWEI_talent_item img{
+	 	height: 172px;
+	 	    border-radius: 6px;
+	 }
+	 .HUAWEI_talent_item{
+	 	height: 230px;
+	 	margin-bottom: 5px;
+	 }
+	 .HUAWEI_talent_item_box{
+	 	height: auto;
+	 }
+	 .HUAWEI_hoverShow,.HUAWEI_hoverShow:hover{
+	 	    position: static;
+	 	    background: none;
+	 	    opacity: 1;
+	 	    height: auto;
+	 	    padding: 0;
+	 	    width: 152px;
+	 	    font-size: 12px;
+	 }
+	 .HUAWEI_hoverShow:hover{
+	 	position: static;
+	 	    background: none;
+	 	    opacity: 1;
+	 }
+	 .HUAWEI_talent_item_name{
+	 	color: #444444 ;
+	 	font-size: 20px;
+	 	    line-height: 26px;
+	 }
+	 .HUAWEI_talent_item_tyep{
+	 	line-height: 17px;
+	 }
+	 .HUAWEI_hoverShow_word{
+	 	font-size: 12px;
+	 	color: #C1C1BF ;
+	 	line-height: 18px;
+	 }
+	 .HUAWEI_talent_item_tyep{
+	 	color: #9D9D9D;
+	 }
+	 .HUAWEI_show:after {
+	 	margin-top: 6px;
+    width: 13px;
+    height: 6px;}
+	 .container{width:100%;margin: 0 auto;}
+    /*瀑布流层*/
+    .waterfall{
+        -moz-column-count:2; /* Firefox */
+        -webkit-column-count:2; /* Safari 和 Chrome */
+        column-count:2;
+        -moz-column-gap: 1em;
+      -webkit-column-gap: 1em;
+      column-gap: 9px;
+    }
+     .container .item {
+     	margin-bottom: 25px;
+     	position: relative;
+     	width: 163px;
+     }
+    .container .item h5{
+    	font-size: 14px;
+    	color: #9A9A9A;
+    	margin-bottom: 8px;
+    	font-weight: 400;
+    	 	line-height: 20px;
+    }
+    
+    .container .item p{
+    	font-size: 15px;
+    	color: #434343 ;
+    	width: 163px;
+    	margin-bottom: 8px;
+    	line-height: 21px;
+    	margin-left: 0;
+    }
+    .container .item span{
+    	font-size: 12px;
+    	color: #9A9A9A;
+    	line-height: 17px;
+    margin-left: 0;
+    	
+    }
+    .HUAWEI_banner_topMap  {
+    width: 110px;
+    height: 26px;
+    position: initial;
+    margin: 0 auto;
+    background: url(http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/pf099b9fzf4f9j6.png);
+   background-size: cover;
+    margin-bottom: 15px;
+    margin-top: 7px;
+    }
+   
+    .HUAWEI_bigMap{
+    	margin-top: 30px;
+    }
+    .HUAWEI_smallMap_wrap{
+    	margin-top: 10px;}
+    .update_article_title{
+    	height: auto;
+    	width: 270px;
+    }
+    .update_article{
+    	margin-top: 30px;
+    }
+	 .free_exp {
+    margin-top: 39px;
+}.openFreeLife{
+	margin-top: 69px;
+}
+.container .item p{
+	width: 143px;
+}
+.HUAWEI_banner_exp p{
+	line-height: 24px;
+}
+.HUAWEI_bigMap>div{
+	display: none;
+}
+.HUAWEI_banner_exp .HUAWEI_banner_exp_p2{
+	/*margin: 15px 0;*/
+}
+.HUAWEI_banner_exp{
+	margin-top: -60px;
+	border-radius: 6px;
+}
+.HUAWEI_smallMap_content{
+	padding: 8px;
+	padding-bottom: 0px;
+}
+.HUAWEI_smallMap_content p{
+		font-size: 11px;
+	  	width: 132px;
+	  	line-height: 16px;
+	  }
+	  .HUAWEI_smallMap_content span:nth-of-type(1){
+	  	color: #AEAEAE;
+	  	font-size: 8px;
+	  	float: left;
+	  	line-height: 11px;
+	  	margin-bottom: 8px;
+	  }
+	  .HUAWEI_smallMap_content span:nth-of-type(2){
+	  	font-size: 15px;
+    bottom: 100px;
+    right: 7px;
+	  }
+	  .container {
+    padding-right: 0px;
+    margin-top: 40px;
+    padding-left: 0px;}
+    .HUAWEI_talent{
+    	margin-top: 20px;
+    }
+     .HUAWEI_talent_warp{
+	 	background: rgba(2,2,2,0);
+	 	height: 60px;
+	 }
+	 .HUAWEI_talent_item_name{
+	 	bottom: 5px;
+	 	    left: 0px;
+	 }
+	 .HUAWEI_talent_item_tyep{
+	 	bottom: 35px;
+	 	    left: 0px;
+	 }
+	 }
+
+		</style>
+	</head>
+	<body >
+			<div class="HUAWEI">
+				<div class="HUAWEI_wrap">
+					<!--banner start-->
+					  <div class="HUAWEI_banner">
+					  	   <div class="HUAWEI_banner_img">
+
+					  	   </div>
+					  	   <div class="HUAWEI_banner_exp">
+					  	   	  <div class="HUAWEI_banner_topMap">
+					  	   	  	  <!--<img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/gNUZ3LARTULRLLM.png" class="inner_img"/>-->
+					  	   	  </div>
+					  	   	  <div class="HUAWEI_banner_bottomMap">
+					  	   	  	  <p class="HUAWEI_banner_exp_p1">梦想填充的城市，灯火辉煌的写字楼；想要追逐诗与远方，却被“连自己都快养活不起“的扎心现实彷徨在原地skrrrrr</p>			
+			  	   	  
+<p>    总是羡慕票圈里的深夜美食、说走就走的旅行、充满刺激的极限挑战，心生向往，却放心不下还未完成的KPI，舍不得花掉存了N久却远不足以支付房子首付的毛爷爷……</p>
+    <p>当我们感受到不自由时，我们所“企图"的自由是什么样子？ 自由不是逃离北上广深，而是无论我从哪里来，到哪里去，都在一定程度上成为了我喜欢的自己。</p>
+    <p>因为热爱美食，即使会变成阔爱的胖纸，也会奋不顾身的与美食谈一场恋爱；</p>
+    <p>因为喜欢运动，即使旅途遥远也要带着不安分的滑板在南半球的海洋里打卡冒险；</p>
+    <p>因为喜爱音乐，即使唱到三天三夜也要为偶像疯狂打Call ……</p>
+<p>自由，就是在生活里，做自己喜欢的事情，自由的安放灵魂。</p>
+<p>今天，数字尾巴&华为发起一场“自由体验家”的行动，我们邀请10位不同领域、有着独特认知、独特生活方式的达人KOL，带着HUAWEI FreeBuds，进入他们真实的生活，用不同的方式聆听世界，从最真实的生活场景中，向大家解析“自由”，共同寻找城市中“自由的生活方式”。
+尾巴们，一起加入我们这次行动吧！</p>
+
+					  	   	  </div>
+					  	   	 <span class="HUAWEI_show">展开更多</span>
+					  	   	 <span class="HUAWEI_hiden">收起</span>
+					  	   </div>
+					  	   
+					  </div>
+					<!--banner end-->
+					<!--bigMap start-->
+					<div class="HUAWEI_bigMap">
+						<div></div>
+						<img src="http://s2.dgtle.com/portal/201808/01/095344syjazkyknva8y6z9.jpg?imageView2/2/w/960/q/100"/>
+					</div>
+					<!--bigMap end-->
+					<!--smallMap start-->
+					<div class="HUAWEI_smallMap_wrap">
+						<div class="HUAWEI_smallMap HUAWEI_smallMap_first">
+							<div class="HUAWEI_smallMap_content">
+								<p>华为 FreeBuds 盛夏的正确打开方式 ?</p>
+								<span>-来自达人 Charleschen</span>
+								<span>昨日</span>
+							</div>
+							<img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+						</div>
+						<div class="HUAWEI_smallMap">
+							<div class="HUAWEI_smallMap_content">
+								<p>华为 FreeBuds 盛夏的正确打开方式 ?</p>
+								<span>-来自达人 Charleschen</span>
+								<span>昨日</span>
+							</div>
+							<img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+						</div>
+					</div>
+					<!--smallMap end-->
+					
+					<!--更新文章  start-->
+					 <div class="update_article">
+					 	 <div class="update_article_title">
+					 	 	 <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/Lv1fGsebsDpE34d.png" class="inner_img"/>
+					 	 </div>
+					 	 <div class="update_article_describe">
+					 	 	<span class="describe_pot">.</span>&nbsp;<span class="update_article_total">3000 人共同观看了自由生活方式</span>&nbsp;<span class="describe_pot">.</span>
+					 	 </div>
+
+     <div class="container">
+        <div class="waterfall">
+            <div class="item">
+
+                <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691">
+                 <h5>第一天</h5>
+                <p>华为 FreeBuds 盛夏的正确打开方式 ?</p>
+                <span>-来自达人 Charleschen</span>
+           </div>
+           <div class="item">
+
+                <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691">
+                 <h5>第一天</h5>
+                <p>华为 FreeBuds 盛夏的正确打开方式 ?</p>
+                <span>-来自达人 Charleschen</span>
+           </div>
+           <div class="item">
+
+                <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691">
+                 <h5>第一天</h5>
+                <p>华为 FreeBuds 盛夏的正确打开方式 ?</p>
+                <span>-来自达人 Charleschen</span>
+           </div>
+           <div class="item">
+
+                <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691">
+                 <h5>第一天</h5>
+                <p>华为 FreeBuds 盛夏的正确打开方式 ?</p>
+                <span>-来自达人 Charleschen</span>
+           </div>
+
+        </div>
+    </div>
+					 </div>
+					<!--更新文章  end-->
+					<!--自由体验家 start-->
+					<div class="free_exp">
+						  <div class="free_exp_title">
+						  	   <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/dfv6sadp47VlU9M.png" class="inner_img" />
+						  </div>
+						  <div class="free_exp_content">
+						  	   <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img" />
+						  </div>
+					</div>
+					<!--自由体验家 end-->
+					<!--达人 start-->
+					  <div class="HUAWEI_talent clearfix">
+					  	
+					  	   <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	   <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	   <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	   <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	   <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	   <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	   <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	   <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	   <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	   <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	    <div class="HUAWEI_talent_item_box">
+					  	   	   <div class="HUAWEI_talent_item">
+							  	   	 <img src="http://s1.dgtle.com/forum/201807/31/163106aaie3rjjvarh9bvq.jpg?v=1533089691" class="inner_img"/>
+							  	   	<div class="HUAWEI_talent_warp">
+							  	   		<p class="HUAWEI_talent_item_tyep">- 汽车博主</p>
+							  	   	    <p class="HUAWEI_talent_item_name">谢翔</p>
+							  	   	</div>							  	   	
+					  	       </div>
+					  	       <div class="HUAWEI_hoverShow">
+					  	       	 <p class="HUAWEI_hoverShow_word">让摄影师 Bruce Hall 告诉你，身为视觉障碍人士，如何利用他的 Mac 创作出亮眼的优美影像。</p>
+					  	       </div>
+					  	   </div>
+					  	  
+					  	  
+					  	  
+					  	   
+					  </div>
+					<!--达人 end-->
+					<!--点击购买 start-->
+					 <div class="clickBuy">
+					    <img src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/XEJCxXuLHtJlL8h.png" class="inner_img"/>
+					 </div>
+					<!--点击购买 end-->
+					<!--开启自由生活 start-->
+					   <div class="openFreeLife">
+					   	 <img  src="http://s1.dgtle.com/jdong_plugin_public/topic_medium/image/K68UveaDK5ta0MW.png" class="inner_img" />
+					   </div>
+					<!--开启自由生活 end-->
+				</div>
+			</div>
+		
+<!--专题html end-->
+
+
+<!-- end -->
+	
+	
+	</body>
+</html>
+ <script type="text/javascript">
+   var HUAWEI_show=document.getElementsByClassName('HUAWEI_show')[0];
+   var HUAWEI_hiden=document.getElementsByClassName('HUAWEI_hiden')[0];
+   var HUAWEI_banner_bottomMap=document.getElementsByClassName('HUAWEI_banner_bottomMap')[0];
+
+   HUAWEI_show.onclick=function(){ 
+   HUAWEI_banner_bottomMap.style.height='auto';
+   HUAWEI_banner_bottomMap.transaction='all 0.8s ease 0s';
+   HUAWEI_hiden.style.display='block';
+   HUAWEI_show.style.display='none';
+
+   }
+   HUAWEI_hiden.onclick=function(){
+   HUAWEI_banner_bottomMap.transaction='all 0.8s line';
+   HUAWEI_banner_bottomMap.style.height='147px';
+   HUAWEI_show.style.display='block';
+   HUAWEI_hiden.style.display='none'
+
+   }
+   
+ </script>

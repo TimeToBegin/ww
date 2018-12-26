@@ -1,0 +1,153 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;font-weight: 100; font:0.14rem "微软雅黑","Arial Narrow",HELVETICA;}
+html{font-size:625%;}
+body{font:0.14rem "微软雅黑","Arial Narrow",HELVETICA; background: rgba(249,249,249,1);color:#6c6c6c;}
+a{color:#6c6c6c;text-decoration:none}
+i,em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+.ind{text-indent:2em}
+.ind10{text-indent:10px;}
+.noborder{border:0;}
+input{outline: none;}
+.clearfix:after{content:'.';clear:both;display: block;height:0px;overflow: hidden;visibility:hidden}
+@media screen and (max-width:960px){}
+@media (min-width:640px){body{font-size:1rem;}}
+@media (min-width:960px){body{font-size:1.2rem;}}
+@media (min-width:1200px){body{font-size:1.5rem;}}
+body{
+    
+}
+
+.invite-banner{
+            max-width: 375px;
+            height: 4.56rem;
+            margin: 0 auto;
+            background: #E4E4E4;
+                background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+        }
+    .invite{
+//      min-width: 3.75rem;
+position: relative;
+        margin: 0 auto;
+        background: rgba(249,249,249,1);
+        font-size:0.12rem;
+        padding-bottom: .5rem;
+        max-width: 3.75rem;
+        .invite-con{
+            width: 90%;
+            margin: 0 auto;
+                position: absolute;
+                top: -50px;
+                left: 5%;
+        }
+        .invite-edit-wap{
+            position: relative;
+            height: 1.6rem;
+            margin: 0 auto;
+            width:100%;
+        }
+       
+        
+        .invite-1{
+            padding: .2rem;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 4px;
+            background: #FFFFFF;
+            box-shadow: 0 8px 5px 0 rgba(52,73,95,0.05);
+            border-radius: 4px;
+            padding-bottom: 0px;
+            margin-bottom: 20px;
+        }
+        .invite-1-title{
+            padding-bottom: .18rem;
+            span{
+                font-family: PingFangSC-Semibold;
+                font-size: 17px;
+                color: #000000;
+                margin-right: 10px;
+            }
+            span:nth-of-type(2){
+                font-family: PingFangSC-Regular;
+                font-size: .12rem;
+                color: #A4A4A4;
+                letter-spacing: 0;
+            }
+        }
+        .invite-1-content{
+            width: 100%;
+            p{
+                font-family: PingFangSC-Light;
+                font-size: 23px;
+                color: #3B93EB;
+            }
+            li{
+                a{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                border-top: 1px solid #F3F3F3;
+                
+                padding:.15rem  .05rem ;
+                
+                i{
+                    position: relative;
+                    height: 0px;
+                    width: 0px;
+                    display: block;
+                    border-top: .10rem solid transparent;
+                    border-left:.10rem solid #C8C8C8;;
+                    border-bottom: .10rem solid transparent;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: -.1rem;
+                        left: -.12rem;
+                        border-top: .10rem solid transparent;
+                        border-left: .10rem solid #fff;
+                        border-bottom: .10rem solid transparent;
+                      }
+                }
+            }
+        }
+        .invite-skill{
+            p{
+                color: #42BFA3;
+            }
+        }
+        .invite-sell{
+            p{
+                color: #304E83;
+            }
+        }
+        .invite-operate{
+            p{
+                color:#D37158;
+            }
+        }
+    }
+
+@media screen and (max-width:640px){
+     .invite{
+         width: 100%;
+         max-width: none;
+     }
+     .invite-banner{
+            max-width: 100%;}
+}
+@media screen and (max-width:375px){
+     .invite{
+         width: 100%;
+         max-width: none;
+     }
+     .invite-banner{
+            max-width: 100%;}
+}

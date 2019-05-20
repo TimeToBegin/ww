@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wb="http://open.weibo.com/wb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <a id="shareBtn" href="javascript:void(0)" target="_blank">自定义新浪微博分享按钮样式</a>
+
+<script>
+function weiboShare() {
+    var wb_shareBtn = document.getElementById("shareBtn"),
+        wb_url = 'http://www.dgtle.com', //获取当前页面地址，也可自定义例：wb_url = "http://www.dgtle.com"
+        count = '', //表示是否显示当前页面被分享数量(1显示)(可选，允许为空)
+        wb_appkey = "666245111", //用于发布微博的来源显示，为空则分享的内容来源会显示来自互联网。(可选，允许为空)1368663223
+        wb_title = "分享内容介绍", //分享时所示的文字内容，为空则自动抓取分享页面的title值(可选，允许为空)
+        wb_ralateUid = "高阳刘", //转发时会@相关的微博账号(可选，允许为空)
+        wb_pic = "", //自定义图片地址，作为微博配图(可选，允许为空)
+        wb_language = "zh_cn"; // 语言设置(zh_cn|zh_tw)(可选)
+        wb_shareBtn.setAttribute("href", "http://service.weibo.com/share/share.php?url=" + wb_url + "&appkey=" + wb_appkey + "&title=" + wb_title + "&pic=" + 
+        wb_pic + "&ralateUid=" + wb_ralateUid + "&language=" + wb_language +
+        "&count=" + count);
+}
+weiboShare();
+// http://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.dgtle.com%2Farticle-28343-1.html%230-tsina-1-39860-397232819ff9a47a7b7e80a40613cfe1&title=Apple%20%E7%9A%84%E5%BE%A1%E7%94%A8%E6%90%AD%E9%85%8D%EF%BC%9F%E7%9C%9F%E5%8A%9B%208331%20%E5%90%8C%E8%BD%B4%E7%9B%91%E5%90%AC%E9%9F%B3%E7%AE%B1%E4%BD%93%E9%AA%8C%E4%B8%A8%E6%95%B0%E5%AD%97%E5%B0%BE%E5%B7%B4&appkey=666245111&searchPic=true
+</script> 
+</body>
+</html>
